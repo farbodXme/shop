@@ -206,9 +206,6 @@ body {
   direction: rtl;
   text-align: justify;
 }
-.about-us-right .description::first-letter {
-  padding-right: 30px;
-}
 
 .gallery .cards-wrapper {
   display: flex;
