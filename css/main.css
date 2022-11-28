@@ -9,6 +9,11 @@
   src: url("../fonts/IranNastaliq.ttf");
   font-weight: normal;
 }
+.card-img, .card-overlay {
+  width: 100%;
+  height: 100%;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -37,7 +42,6 @@ body {
   color: #bbb;
   font-weight: 300;
   letter-spacing: 2px;
-  text-transform: uppercase;
 }
 
 .sub-name {
@@ -47,7 +51,6 @@ body {
   text-align: center;
   font-weight: 300;
   letter-spacing: 2px;
-  text-transform: uppercase;
 }
 
 .main-heading {
@@ -82,6 +85,59 @@ body {
 .main-btn:hover {
   background-color: #d3ab55;
   color: #262626;
+}
+
+.card {
+  width: 33.3333%;
+  height: 30vw;
+  position: relative;
+  overflow: hidden;
+}
+.card:hover .card-overlay {
+  left: 0;
+}
+.card-overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  color: #fff;
+  background-color: rgba(211, 171, 85, 0.6);
+  z-index: 10;
+  transition: left 0.5s;
+}
+.card-overlay-heading {
+  font-family: Nastaliq, Tahoma;
+  font-size: 50px;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+.card-overlay-paragraph {
+  font-family: Sahel, Tahoma;
+  font-size: 30px;
+  margin-bottom: 30px;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+.card-overlay-btn {
+  width: 150px;
+  height: 40px;
+  color: #d3ab55;
+  background-color: #fff;
+  font-family: Sahel, Tahoma;
+  font-size: 14px;
+  border: 1px solid #d3ab55;
+  border-radius: 30px;
+  outline: none;
+  cursor: pointer;
+}
+.card-img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 0.5;
 }
 
 .header {
@@ -149,4 +205,13 @@ body {
   color: #bbb;
   direction: rtl;
   text-align: justify;
+}
+.about-us-right .description::first-letter {
+  padding-right: 30px;
+}
+
+.gallery .cards-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 100px 0;
 }/*# sourceMappingURL=main.css.map */
