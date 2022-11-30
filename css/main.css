@@ -23,6 +23,16 @@ body {
   background-color: #262626;
 }
 
+::-moz-selection {
+  background: transparent;
+  color: #d3ab55;
+}
+
+::selection {
+  background: transparent;
+  color: #d3ab55;
+}
+
 .logo {
   display: flex;
   justify-content: center;
@@ -167,6 +177,7 @@ body {
   height: 90vh;
   display: flex;
   align-items: center;
+  margin-top: 30px;
 }
 .about-us-left {
   width: 40%;

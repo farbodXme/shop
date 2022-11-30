@@ -54,3 +54,8 @@ $font-nastaliq: Nastaliq, Tahoma;
 body {
   background-color: $color-dark;
 }
+
+::selection{
+  background: transparent;
+  color: $color-primary;
+}
