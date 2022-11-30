@@ -30,6 +30,7 @@ body {
   top: 3%;
   right: 3%;
   z-index: 300;
+  border-radius: 30px;
 }
 @media (max-width: 800px) {
   .hamburger-menu {
@@ -56,6 +57,7 @@ body {
   background-color: #d3ab55;
   transition: all 0.5s 0.5s;
   transform-origin: right;
+  border-radius: 30px;
 }
 @media (max-width: 800px) {
   .hamburger-menu .menu-line {

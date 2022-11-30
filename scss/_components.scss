@@ -5,6 +5,7 @@
   top: 3%;
   right: 3%;
   z-index: 300;
+  border-radius: 30px;
 
   @media (max-width: 800px) {
     width: 35px;
@@ -23,6 +24,7 @@
     justify-content: space-around;
     cursor: pointer;
     transition: transform 0.5s;
+    
 
     &-line {
       width: 100%;
@@ -30,6 +32,7 @@
       background-color: $color-primary;
       transition: all 0.5s 0.5s;
       transform-origin: right;
+      border-radius: 30px;
 
       @media (max-width: 800px) {
         height: 3px;
