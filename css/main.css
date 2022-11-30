@@ -137,7 +137,7 @@ body {
 .card-img {
   -o-object-fit: cover;
      object-fit: cover;
-  opacity: 0.5;
+  opacity: 0.9;
 }
 
 .header {
@@ -211,4 +211,41 @@ body {
   display: flex;
   flex-wrap: wrap;
   margin: 100px 0;
+}
+
+.footer {
+  padding: 70px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.footer-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 70px;
+}
+.footer .social-media {
+  display: flex;
+  width: 300px;
+  justify-content: space-between;
+  margin-bottom: 70px;
+}
+.footer .social-media-item {
+  list-style: none;
+}
+.footer .social-media-link {
+  text-decoration: none;
+  font-size: 50px;
+  color: #bbb;
+  transition: color 0.7s;
+}
+.footer .social-media-link:hover {
+  color: #d3ab55;
+}
+.footer-copyRight-paragraph {
+  font-family: Sahel, Tahoma;
+  font-size: 20px;
+  color: #bbb;
+  direction: rtl;
 }/*# sourceMappingURL=main.css.map */
